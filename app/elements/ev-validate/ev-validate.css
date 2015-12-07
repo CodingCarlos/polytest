@@ -1,0 +1,176 @@
+.event {
+  background-color: #fff;
+  border-bottom: 1px solid #D2D2D2;
+  border-top: 1px solid #E2E2E2;
+  -webkit-box-shadow: 0 0 15px 0 rgba(0,0,0,.1);
+  box-shadow: 0 0 15px 0 rgba(0,0,0,.1);
+  font-size: .85em;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.event:first-child {
+  margin-top: 8px;
+}
+
+/*.event img {
+  border-radius: 50%;
+}*/
+
+.event a {
+  color: inherit;
+}
+
+.event .row {
+  margin-bottom: 3px;
+}
+
+.event .eventHeader {
+  border-bottom: 1px solid #e2e2e2;
+  padding: 7px 0;
+  padding-left: 15px;
+  position: relative;
+}
+
+  .event .eventHeader .eventHeaderImage {
+    padding: 0px 4px 0px 0px;
+  }
+    .event .eventHeader .eventHeaderImage img {
+        border-radius: 7px;
+      height: 40px;
+      width: 40px;
+    }
+
+  .event .eventHeader .eventHeaderTime {
+    color: rgba(0,0,0,.5);
+  }
+
+  .event .eventHeader .eventHeaderChevron {
+    color: rgba(0,0,0,.25);
+    float: right;
+    padding: 12px 12px 0px 0px !important;
+  }
+
+.event .chevron {
+    background-color: white;
+    border: 1px solid #f0f0f0;
+    -webkit-box-shadow: 0 0 20px -5px rgba(0,0,0,.3);
+    box-shadow: 0 0 20px -5px rgba(0,0,0,.3);
+    min-width: 100px;
+    right: 32px;
+    position: absolute;
+    top: 32px;
+    width: 40vw;
+}
+
+    .event .chevron div {
+        background-color: white;
+        border-bottom: 1px solid #f0f0f0;
+        padding: 8px 16px;
+    }
+
+.event .eventContent {
+  padding-left: 10px;
+  padding-right: 15px;
+  margin-bottom: 6px;
+  color: #000;
+}
+
+  .event .eventContent .eventContentIcon {
+    position: relative;
+    padding-right: 6px;
+  }
+
+  .event .eventContent .eventContentIcon img {
+      border-radius: 50%;
+    height: 64px;
+    width: 64px;
+  }
+
+  .event .eventContent .eventContentIcon .overIcon {
+    left: 49px;
+    position: absolute;
+    top: 38px;
+  }
+  
+  .event .eventContent .col {
+    min-height: 75px;
+  }
+
+.event .row.eventImg {
+    padding: 0 16px;
+    margin-bottom: 0;
+}
+
+    .eventImg img {
+        border-radius: 5px;
+        max-width: 100%;
+    }
+
+.event .eventValidate {
+    border-top: 1px solid #d8d8d8;
+    font-size: 1.15em;
+    font-weight: 500;
+    margin-bottom: 8px;
+    padding: 8px 0px 0;
+    text-align: center;
+}
+
+  .event .eventValidate .col {
+      border: 1px solid;
+      -moz-box-sizing: content-box;
+      box-sizing: content-box;
+      border-radius: 5px;
+      font-size: .9em;
+      padding: 6px 0;
+      width: 40vw;
+  }
+
+  .event .eventValidate .validateNo {
+    border-color: rgba(0,0,0,.5);
+    color: rgba(0,0,0,.5);
+    margin-left: 7vw;
+}
+
+  .event .eventValidate .validateYes {
+    border-color: #faa545;
+    color: #faa545;
+    margin-left: 5vw;
+}
+
+.event .eventFooter {
+    background-color: #fff;
+    border-top: 1px solid #d8d8d8;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    margin-bottom: 0px;
+    color: #ababab;
+}
+
+
+/* -- EVENT TYPES -- */
+
+.followInfo {
+  width: 100%;
+}
+
+.achivementInfoTittle, .followInfoTittle {
+  font-size: 1.4em;
+}
+
+.achivementInfo {
+  width: calc(100% - 85px);
+}
+
+.followInfoEvent {
+  width: calc(100% - 125px);
+}
+
+.achivementInfo span.ellipsis, .followInfo span.ellipsis {
+  width: 100%;
+}
+
+.followIconEvent {
+  color: #faa545;
+  padding-right: 12px !important;
+}

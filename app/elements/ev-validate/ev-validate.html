@@ -1,0 +1,72 @@
+
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<dom-module id="ev-validate">
+<link rel="stylesheet" href="ev-validate.css">
+  <template>
+    
+    <div class="row event">
+  <div class="col s12 no-padding" id="event_[PUBLICATION_ID]">
+    <div class="row eventHeader">
+      <div class="col eventHeaderImage left-align" onclick="EventUtil.profile([USER_ID])"><a href="#profile/[USER_ID]"><img src="http://dev.gamify.es/new/img/profile/sorlak.jpg" alt="[USER_NAME]"></a></div>
+      <div class="col left-align no-padding" onclick="EventUtil.profile([USER_ID])">
+        <strong><a href="#profile/[USER_ID]">{{u-name}}</a></strong> <span class="eventHeaderTime">[DATE_TIME]</span> <br />
+                <span class="action">quiere validar un logro</span>
+      </div>
+      <div class="col left-align no-padding eventHeaderChevron" onclick="EventUtil.chevron('[PUBLICATION_ID]');">
+        <i class="material-icons">&#xE5D4;</i>
+      </div>
+            <div class="chevron hidden">
+                <div>Opcion 1</div>
+                <div>Opcion 2</div>
+                <div>Opcion 3</div>
+            </div>
+    </div>
+    <div class="row eventContent" id="publication_[PUBLICATION_ID]">
+      <div class="col center-align valign-wrapper eventContentIcon">
+        <img src="http://dev.gamify.es/new/img/icon/hit/15.png">
+        <i class="mdi-action-lock small overIcon"></i>
+      </div>
+      <div class="col no-padding left-align valign-wrapper achivementInfo">
+        <div>
+          <strong class="achivementInfoTittle">{{a-name}}</strong><br />
+          <span class="ellipsis ellipsis-2">
+            {{a-desc}}
+          </span>
+        </div>
+      </div>
+    </div>
+        <div class="row eventImg">
+      <div class="col s12">
+        <img src="http://fparty.gamify.es/uploads/27-1441811322012-1278746709.jpg" onclick="EventUtil.viewImage(this);">
+      </div>
+    </div>
+    <div class="row eventValidate" id="eventValidate_[PUBLICATION_ID]">
+      <div class="col center validateNo">
+        NO VALIDAR
+      </div>
+      <div class="col center validateYes">
+        VALIDAR
+      </div>
+    </div>
+    <div class="row eventFooter">
+      <div class="col s4 center like" onclick="EventUtil.like('{{pub-id}}');">Me gusta</div>
+      <div class="col s4 center comment">Comentar</div>
+      <div class="col s4 center share" onclick="EventUtil.share('{{pub-id}}');">Compartir</div>
+    </div>
+  </div>
+</div>
+
+
+  </template>
+
+  <script>
+    (function() {
+      
+      Polymer({
+        is: 'ev-validate'
+      });
+    })();
+  </script>
+
+</dom-module>
